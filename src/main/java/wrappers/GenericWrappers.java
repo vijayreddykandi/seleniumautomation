@@ -117,6 +117,17 @@ public class GenericWrappers extends ProjectReport implements Wrappers {
 			e.printStackTrace();
 		}
 	}
+	public void enterById(String idValue, String data) {
+		// TODO Auto-generated method stub
+		try {
+			wait.until(ExpectedConditions.visibilityOf(driver.findElementById(idValue))).sendKeys(data);
+			
+			//driver.findElementById(idValue).sendKeys(data);
+		} catch (NoSuchElementException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 	@Override
 	public void enterByName(String nameValue, String data) {

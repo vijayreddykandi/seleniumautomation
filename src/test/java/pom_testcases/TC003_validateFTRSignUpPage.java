@@ -2,12 +2,13 @@ package pom_testcases;
 
 import pom_pages.IRCTCFTRSignUpPage;
 import pom_pages.IRCTCHomePage;
+import wrappers.ProjectWrappers;
 
 
-public class TC003_validateFTRSignUpPage {
+public class TC003_validateFTRSignUpPage extends ProjectWrappers{
 	
 	public void irctcFTRSignUp() {
-		IRCTCHomePage obj = new IRCTCHomePage();
+		IRCTCHomePage obj = new IRCTCHomePage(driver);
 		IRCTCFTRSignUpPage sp = new IRCTCFTRSignUpPage();
 		obj.clickOkOnTheAlert();
 		obj.clickOnTrains();

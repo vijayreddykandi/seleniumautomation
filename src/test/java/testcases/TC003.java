@@ -9,7 +9,7 @@ import wrappers.GenericWrappers;
 public class TC003 extends GenericWrappers {
 	@Test
 	public void FTRSignUp() {
-		invokeApp("chrome", "https://www.irctc.co.in/nget/");
+		invokeApp("chrome", "https://www.irctc.co.in/nget/",false);
 		clickByXpath("/html/body/app-root/app-home/div[1]/app-header/p-dialog[2]/div/div/div[2]/div/form/div[2]/button");
 		clickByXpath("/html/body/app-root/app-home/div[1]/app-header/div[1]/div[2]/a/i");
 		threadWait(4000);

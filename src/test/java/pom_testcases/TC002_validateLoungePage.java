@@ -2,9 +2,10 @@ package pom_testcases;
 
 import pom_pages.IRCTCHomePage;
 import pom_pages.IRCTCLoungePage;
+import wrappers.ProjectWrappers;
 
 
-public class TC002_validateLoungePage {
+public class TC002_validateLoungePage extends ProjectWrappers{
 	
 	public void irctcLounge() {
 		IRCTCHomePage obj = new IRCTCHomePage(driver);
